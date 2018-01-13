@@ -1,0 +1,16 @@
+<h1>Portfolio Items</h1>
+
+<% if @portfolio_items.count > 0 %>
+<dl>
+<% @portfolio_items.each do |pf| %>
+  <dt>
+    <%= pf.title %> | <%= pf.subtitle %>
+  </dt>
+  <dd>
+    <%= pf.body %>
+    <%= image_tag pf.thumb_image %>
+  </dd>
+<% end %>
+</dl>
+<% end %>
+

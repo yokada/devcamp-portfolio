@@ -29,8 +29,8 @@ puts "5 Skill items created."
     title: "Portfolio title: #{t}",
     subtitle: "My Greate Service",
     body: "ポートフォリオ内容 #{t}",
-    main_image: "http://placeholder.it/600x400",
-    thumb_image: "http://placeholder.it/350x200"
+    main_image: "http://via.placeholder.com/600x400",
+    thumb_image: "http://via.placeholder.com/350x200"
   )
 end
 
