@@ -61,6 +61,8 @@ GEM
       nokogiri (~> 1.4)
     forgery_ja (0.2.2)
       forgery (~> 0.3.8)
+    friendly_id (5.1.0)
+      activerecord (>= 4.0.0)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     i18n (0.9.1)
@@ -171,6 +173,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   faker
   forgery_ja
+  friendly_id (~> 5.1.0)
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   pg (~> 0.18)
