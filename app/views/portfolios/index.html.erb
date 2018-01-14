@@ -6,7 +6,7 @@
 <dl>
 <% @portfolio_items.each do |pf| %>
   <dt>
-    <%= pf.title %> | <%= pf.subtitle %>
+    <%= link_to pf.title, portfolio_path(pf.id) %>
   </dt>
   <dd>
     <%= pf.body %>
