@@ -1,5 +1,7 @@
 <h1>Portfolio Items</h1>
 
+<%= link_to 'Create item', new_portfolio_url %>
+
 <% if @portfolio_items.count > 0 %>
 <dl>
 <% @portfolio_items.each do |pf| %>
@@ -9,6 +11,8 @@
   <dd>
     <%= pf.body %>
     <%= image_tag pf.thumb_image unless pf.thumb_image.nil? %>
+    <%= link_to 'Edit item', edit_portfolio_path(pf.id) %>
+    <%= link_to 'Delete item', pf, method: :delete, data: { confirm: 'Are you sure?' } %>
   </dd>
 <% end %>
 </dl>
