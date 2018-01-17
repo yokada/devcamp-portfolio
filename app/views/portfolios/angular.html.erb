@@ -2,9 +2,9 @@
 
 <%= link_to 'Create item', new_portfolio_url %>
 
-<% if @portfolio_items.count > 0 %>
+<% if @angular_portfolio_items.count > 0 %>
 <dl>
-<% @portfolio_items.each do |pf| %>
+<% @angular_portfolio_items.each do |pf| %>
   <dt>
     <%= link_to pf.title, portfolio_show_path(pf.id) %>
     <%= pf.subtitle %>
